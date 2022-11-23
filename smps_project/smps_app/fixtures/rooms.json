@@ -1,0 +1,68 @@
+[
+  {
+    "name": "flat1",
+    "floor": 1,
+    "temperature": 12,
+    "humidity": 60,
+    "CO2": 45,
+    "ventilation": 160,
+    "comfortable": true,
+    "facility_outlet": 7,
+    "facility_noise": 8
+  },
+  {
+    "name": "flat2",
+    "floor": 1,
+    "temperature": 12,
+    "humidity": 60,
+    "CO2": 45,
+    "ventilation": 150,
+    "comfortable": true,
+    "facility_outlet": 7,
+    "facility_noise": 8
+  },
+  {
+    "name": "flat3",
+    "floor": 1,
+    "temperature": 2,
+    "humidity": 3,
+    "CO2": 4,
+    "ventilation": 5,
+    "comfortable": false,
+    "facility_outlet": 7,
+    "facility_noise": 8
+  },
+  {
+    "name": "flat4",
+    "floor": 1,
+    "temperature": 2,
+    "humidity": 3,
+    "CO2": 4,
+    "ventilation": 5,
+    "comfortable": false,
+    "facility_outlet": 7,
+    "facility_noise": 8
+  },
+  {
+    "name": "flat5",
+    "floor": 1,
+    "temperature": 2,
+    "humidity": 3,
+    "CO2": 4,
+    "ventilation": 5,
+    "comfortable": false,
+    "facility_outlet": 7,
+    "facility_noise": 8
+  },
+  {
+    "name": "flat6",
+    "floor": 1,
+    "temperature": 2,
+    "humidity": 3,
+    "CO2": 4,
+    "ventilation": 5,
+    "comfortable": false,
+    "facility_outlet": 7,
+    "facility_noise": 8
+  }
+]

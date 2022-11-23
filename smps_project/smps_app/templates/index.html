@@ -1,4 +1,27 @@
-<h1>Firebase Database</h1>
+<html><head><script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBO24huTNrIgs-eMPCyAVKMs5qAj7BkGC8",
+      authDomain: "smps-home.firebaseapp.com",
+      databaseURL: "https://smps-home-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "smps-home",
+      storageBucket: "smps-home.appspot.com",
+      messagingSenderId: "324485548588",
+      appId: "1:324485548588:web:c3188a088a37c644ec9f89",
+      measurementId: "G-WMNE5RGHPD"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
-<p>Hi, my name is pretty {{name}} and i code {{stack}}.</p>
-<p>My favourite framework is {{framework}}</p>
+</head>
+</html>

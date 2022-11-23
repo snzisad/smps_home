@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+            th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            }
+
+            tr:nth-child(even) {
+            background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+              <th>Flat Name</th>
+              <th>Temperature</th>
+              <th>Comfortable</th>
+            </tr>
+            {% for detail in details %}
+                    
+            <tr>
+                <td>{{detail.name}}</td>
+                <td>{{detail.temperature}}</td>
+                <td>{{detail.comfortable}}</td>
+            </tr>
+            {% endfor %}
+          </table>
+    </body>
+</html>
