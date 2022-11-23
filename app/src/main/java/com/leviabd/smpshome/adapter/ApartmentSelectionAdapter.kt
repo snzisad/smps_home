@@ -1,15 +1,16 @@
 package com.leviabd.smpshome.adapter
 
 import android.app.Activity
-import android.app.AlertDialog
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.leviabd.smpshome.bottom_sheet.MainActivity
+import com.bumptech.glide.Glide
+import com.leviabd.smpshome.activity.ZoneSelectionActivity
 import com.leviabd.smpshome.R
 import com.leviabd.smpshome.model.Apartments
 
@@ -23,23 +24,19 @@ class ApartmentSelectionAdapter (val activity: Activity, val data: ArrayList<Apa
 
     override fun onBindViewHolder(headerClass: RecyclerView.ViewHolder, position: Int) {
         if (headerClass is BuildingListHolderClass) {
-            val apartment_data = data.get(position)
+            val building_data = data.get(position)
 
-            headerClass.tv_apartment_name.setText(apartment_data.name)
+            Glide.with(activity)
+                .load(building_data.picture)
+                .dontAnimate()
+                .into(headerClass.img_building)
 
-            headerClass.cv_apartment_list.setOnClickListener {
-                val builder = AlertDialog.Builder(activity)
-                builder.setMessage("Do you want to register for this apartment?")
-                builder.setPositiveButton("Yes") { dialog, which ->
-                    activity.startActivity(Intent(activity, MainActivity::class.java))
-                }
 
-                builder.setNegativeButton("No") { dialog, which ->
-                    null
-                }
 
-                builder.create().show()
+            headerClass.tv_building_name.setText(building_data.name)
 
+            headerClass.cv_building_list.setOnClickListener {
+                activity.startActivity(Intent(activity, ZoneSelectionActivity::class.java))
             }
         }
 
@@ -50,12 +47,14 @@ class ApartmentSelectionAdapter (val activity: Activity, val data: ArrayList<Apa
     }
 
     class BuildingListHolderClass(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var tv_apartment_name: TextView
-        var cv_apartment_list: CardView
+        var tv_building_name: TextView
+        var img_building: ImageView
+        var cv_building_list: CardView
 
         init {
-            tv_apartment_name = itemView.findViewById(R.id.tv_apartment_name)
-            cv_apartment_list = itemView.findViewById(R.id.cv_apartment_list)
+            tv_building_name = itemView.findViewById(R.id.tv_building_name)
+            img_building = itemView.findViewById(R.id.img_building)
+            cv_building_list = itemView.findViewById(R.id.cv_building_list)
         }
     }
 

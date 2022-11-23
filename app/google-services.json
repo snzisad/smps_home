@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "324485548588",
+    "firebase_url": "https://smps-home-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "smps-home",
+    "storage_bucket": "smps-home.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324485548588:android:ced77e6bd1cf3dbaec9f89",
+        "android_client_info": {
+          "package_name": "com.leviabd.smpshome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324485548588-ucg8eeb3vv8j2gfv3dojqfrj66jfm399.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAULrN4qSkCYRVKMWoGkHDMidnJvpjwNOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324485548588-ucg8eeb3vv8j2gfv3dojqfrj66jfm399.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

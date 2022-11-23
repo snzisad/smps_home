@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:clickable="true"
-    android:id="@+id/cv_building_list"
+    android:id="@+id/cv_apartment_list"
     app:cardCornerRadius="10dp"
     android:layout_margin="5dp"
     android:foreground="?selectableItemBackground"
@@ -11,19 +11,19 @@
 
     <LinearLayout
         android:layout_margin="10dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/img_building"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/flat"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_building_name"
-            android:padding="5dp"
-            android:gravity="center"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_apartment_name"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp"
             android:textSize="16dp"
             android:text="Title"/>
     </LinearLayout>
